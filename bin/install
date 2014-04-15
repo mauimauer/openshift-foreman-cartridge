@@ -2,7 +2,7 @@
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
-RUBY_BIN_DIR=`dirname $(scl enable ruby193 "which ruby")`
+RUBY_BIN_DIR=`dirname $(which ruby)`
 
 echo $RUBY_BIN_DIR:$OPENSHIFT_HOMEDIR/bin > $OPENSHIFT_FOREMAN_DIR/env/OPENSHIFT_FOREMAN_PATH_ELEMENT
 
