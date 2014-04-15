@@ -13,7 +13,7 @@ path_append $LD_LIBRARY_PATH $ld_path > $OPENSHIFT_FOREMAN_DIR/env/LD_LIBRARY_PA
 # permissions to create ~/.gem, so the gems are installed there, and
 # the binstubs are installed in ~/bin
 pushd $OPENSHIFT_FOREMAN_DIR > /dev/null
-ruby "bundle install"
+bundle install
 popd > /dev/null
 
 mkdir -p $OPENSHIFT_FOREMAN_RUN_DIR $OPENSHIFT_FOREMAN_LOG_DIR
